@@ -1,3 +1,5 @@
+package Lesson_1;
+
 public class HomeWork_1_task5 {
     public static void main(String[] args) {
         //В переменных q и w хранятся два натуральных числа.

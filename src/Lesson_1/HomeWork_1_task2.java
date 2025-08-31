@@ -1,3 +1,5 @@
+package Lesson_1;
+
 public class HomeWork_1_task2 {
     public static void main(String[] args) {
         //В переменной n хранится двузначное число.

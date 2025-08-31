@@ -1,3 +1,5 @@
+package Tests_lessons_1_2_3;
+
 import java.util.Scanner;
 
 public class Test {

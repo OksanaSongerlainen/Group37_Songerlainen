@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package Lesson_1;
 
 public class HomeWork_1_task6 {
     public static void main(String[] args) {

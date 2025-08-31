@@ -1,3 +1,5 @@
+package Lesson_1;
+
 public class HomeWork_1_task3 {
     public static void main(String[] args) {
         //В переменной n хранится трёхзначное число.

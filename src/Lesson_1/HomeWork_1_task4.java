@@ -1,3 +1,5 @@
+package Lesson_1;
+
 public class HomeWork_1_task4 {
     public static void main(String[] args) {
         // В переменной n хранится вещественное число с ненулевой дробной частью.
