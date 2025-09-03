@@ -10,9 +10,9 @@ import java.util.Arrays;
 
 public class HW_4 {
     public static void main(String[] args) {
-        int[] array = new int[7];
+        int[] array = new int[8];
         for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * 7);
+            array[i] = (int) (Math.random() * 8);
         }
         System.out.println("Массив с использованием Math.random(): " + Arrays.toString(array));
         System.out.println("\nЭлементы массива: ");
