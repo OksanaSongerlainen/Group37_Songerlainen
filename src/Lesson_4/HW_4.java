@@ -21,13 +21,25 @@ public class HW_4 {
             System.out.println("array[" + i + "] = " + array[i]);
             }
             /*Задача 1:
-Пройти по массиву, вывести все элементы в прямом и в обратном порядке.*/
+            Пройти по массиву, вывести все элементы в прямом и в обратном порядке.*/
             System.out.println("\nЭлементы массива в обратном порядке:");
             for (
                     int i = array.length -1; i>=0; i--) {
                 System.out.print(array[i]);
                 if (i > 0) System.out.print(", ");
             }
-            }
-                }
+            /* Задача 2:
+            Найти минимальный-максимальный элементы и вывести в консоль*/
+        int max = array[0];
+        int min = array[0];
+        for (int i=1 ; i <array.length; i++) {
+            max = Math.max (max, array[i]);
+            min = Math.min (min, array[i]);
+        }
+        System.out.println("\n\nМаксимальное значение: " + max);
+        System.out.println("Минимальное значение: " + min);
+    }
+}
+
+
 
