@@ -6,7 +6,6 @@ package Lesson_4;
 данными, решить для него следующие задачи:*/
 
 
-import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class HW_4 {
@@ -57,8 +56,8 @@ public class HW_4 {
         Найти и вывести количество нулевых элементов. Если нулевых элементов нет - вывести
         сообщение, что их нет*/
         int zeroCount = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == 0) {
+        for (int j : array) {
+            if (j == 0) {
                 zeroCount++;
             }
         }
