@@ -6,7 +6,9 @@ package Lesson_4;
 данными, решить для него следующие задачи:*/
 
 
+import java.sql.SQLOutput;
 import java.util.Arrays;
+
 public class HW_4 {
     public static void main(String[] args) {
         int[] array = new int[7];
@@ -48,9 +50,29 @@ public class HW_4 {
                 minIndex = i;
             }
         }
-            System.out.println("\n\nМаксимальное значение: " + max + " индекс: " + maxIndex);
-            System.out.println("Минимальное значение: " + min + " индекс: " + minIndex);
+        System.out.println("\n\nМаксимальное значение: " + max + " индекс: " + maxIndex);
+        System.out.println("Минимальное значение: " + min + " индекс: " + minIndex);
 
+        /*    Задача 4:
+        Найти и вывести количество нулевых элементов. Если нулевых элементов нет - вывести
+        сообщение, что их нет*/
+        int zeroCount = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 0) {
+                zeroCount++;
+            }
+        }
+        System.out.println("\n Количество нулевых элементов: " + zeroCount);
+        if (zeroCount == 0) {
+            System.out.println("Нулевых элементов в массиве нет!");
+        } else {
+            System.out.println("Индексы нулевых элементов: ");
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] == 0) {
+                    System.out.print(i + " ");
+                }
+            }
+        }
     }
 }
 
