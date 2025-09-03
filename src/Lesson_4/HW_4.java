@@ -62,11 +62,11 @@ public class HW_4 {
                 zeroCount++;
             }
         }
-        System.out.println("\n Количество нулевых элементов: " + zeroCount);
+        System.out.println("\nКоличество нулевых элементов: " + zeroCount);
         if (zeroCount == 0) {
             System.out.println("Нулевых элементов в массиве нет!");
         } else {
-            System.out.println("Индексы нулевых элементов: ");
+            System.out.print("Индексы нулевых элементов: ");
             for (int i = 0; i < array.length; i++) {
                 if (array[i] == 0) {
                     System.out.print(i + " ");
