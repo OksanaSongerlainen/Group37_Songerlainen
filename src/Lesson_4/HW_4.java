@@ -72,6 +72,15 @@ public class HW_4 {
                 }
             }
         }
+/*        Задача 5:
+        Пройти по массиву и поменять местами элементы первый и последний, второй и
+        предпоследний и т.д*/
+        for (int i=0; i<array.length / 2; i++) {
+            int j = array[i];
+            array[i] = array[array.length - 1 - i];
+            array[array.length - 1 - i] = j;
+        }
+        System.out.println("\nМассив после смены элементов местами: " + Arrays.toString(array));
     }
 }
 
