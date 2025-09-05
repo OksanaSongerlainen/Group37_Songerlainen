@@ -75,15 +75,32 @@ public class HW_4 {
 /*        Задача 5:
         Пройти по массиву и поменять местами элементы первый и последний, второй и
         предпоследний и т.д*/
-        for (int i=0; i<array.length / 2; i++) {
+        for (int i = 0; i < array.length / 2; i++) {
             int j = array[i];
             array[i] = array[array.length - 1 - i];
             array[array.length - 1 - i] = j;
         }
         System.out.println("\nМассив после смены элементов местами: " + Arrays.toString(array));
+
+/*    Задача 6:
+    Проверить, является ли массив возрастающей последовательностью (каждое следующее
+число больше предыдущего).*/
+        boolean increasing = true;
+
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] <= array[i - 1]) {
+                increasing = false;
+                break;
+            }
+        }
+        System.out.println("\nПроверка на возрастающую последовательность: ");
+        if (increasing) {
+            System.out.println("Массив является возрастающей последовательностью");
+        } else {
+            System.out.println("Массив не является возрастающей последовательностью");
+        }
     }
 }
-
 
 
 
