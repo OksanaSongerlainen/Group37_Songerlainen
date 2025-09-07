@@ -103,7 +103,7 @@ public class HW_4 {
         int[] result = addOneNumber(array);
             System.out.println("Результат после добавления единицы: " + Arrays.toString(result));
         }
-        int[] addOneNumber(int[]array2){
+        static int[] addOneNumber(int[] array2){
         int n = array2.length;
         for (int i = n - 1; i >= 0; i--) {
             if (array2[i] < 9) {
