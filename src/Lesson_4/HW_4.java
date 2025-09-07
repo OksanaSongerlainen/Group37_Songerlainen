@@ -100,11 +100,10 @@ public class HW_4 {
             System.out.println("Массив не является возрастающей последовательностью");
         }
 
-        int[] result = addOneNumber(numberArray);
-        {
+        int[] result = addOneNumber(array);
             System.out.println("Результат после добавления единицы: " + Arrays.toString(result));
         }
-        int[] addOneNumber; (array2){
+        int[] addOneNumber(int[]array2){
         int n = array2.length;
         for (int i = n - 1; i >= 0; i--) {
             if (array2[i] < 9) {
