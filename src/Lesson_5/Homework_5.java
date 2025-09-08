@@ -95,7 +95,7 @@ class Task3 {
         System.out.println("Массив: ");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                System.out.print(A[i][j]);
+                System.out.printf("%3d" , A[i][j]);
             }
             System.out.println();
         }
