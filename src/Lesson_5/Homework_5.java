@@ -66,7 +66,7 @@ class Task2 {
 }
 
 class Task3 {
-public static void main(String[] args) {
+    public static void main(String[] args) {
  /*   Задача *:
     Даны числа n и m. Создайте массив A[n][m] и заполните его змейкой (см. пример).
             Формат входных данных:
@@ -74,15 +74,30 @@ public static void main(String[] args) {
             Формат выходных данных:
     Программа должна вывести полученный массив, отводя на вывод каждого числа ровно 3
     символа.*/
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("Введите число n ");
-    int n = scanner.nextInt();
-    System.out.println("Введите число m ");
-    int m = scanner.nextInt();
-    int [][]A = new int[n][m];
-    int counter = 0;
-    for (int i=0; i<n; i++) {
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите число n ");
+        int n = scanner.nextInt();
+        System.out.println("Введите число m ");
+        int m = scanner.nextInt();
+        int[][] A = new int[n][m];
+        int counter = 0;
+        for (int i = 0; i < n; i++) {
+            if (i % 2 == 0) {
+                for (int j = 0; j < m; j++) {
+                    A[i][j] = counter++;
+                }
+            } else {
+                for (int j = m - 1; j > 0; j--) {
+                    A[i][j] = counter++;
+                }
+            }
+        }
+        System.out.println("Массив: ");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                System.out.print(A[i][j]);
+            }
+            System.out.println();
+        }
     }
 }
-        }
