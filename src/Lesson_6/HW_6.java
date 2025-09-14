@@ -11,18 +11,17 @@ public class HW_6 {
                 Тестовый сценарий для проверки: Положите деньги на первые две карточки и снимите с
         третьей. Выведите на экран текущее состояние всех трех карточек.*/
 
-        CreditCard card = new CreditCard("1234-5678-9012-1234", 1000.0);
+        CreditCard card1 = new CreditCard("1234-5678-9012-1234", 1000.0);
+        CreditCard card2 = new CreditCard("4444-5678-9090-3454", 800.0);
+        CreditCard card3 = new CreditCard("7756-4435-0899-0011", 4000.0);
 
-        System.out.println("Номер счета: " + card.accountNumber);
-        System.out.println("Текущий баланс: " + card.currentBalance);
+        card1.deposit(500.0);
+        card2.deposit(2800.0);
 
-        card.deposit(500.0);
-        card.deposit(-50.0);
+        card3.withdrawal(3000);
 
-        card.withdrawal(300);
-        card.withdrawal(10000);
-        card.withdrawal(-100);
-
-        card.cardInfo();
+        card1.cardInfo();
+        card2.cardInfo();
+        card3.cardInfo();
     }
 }
