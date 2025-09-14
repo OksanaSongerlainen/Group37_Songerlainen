@@ -11,6 +11,10 @@ public class ATM {
         this.banknote100 = banknote100;
     }
 
+    public void InitialInfo(int banknote20, int banknote50, int banknote100) {
+        System.out.println("Доступная сумма: " + banknote20*20 + banknote50*50 + banknote100*100);
+    }
+
     public void addMoney(int add20, int add50, int add100) {
         if (add20 < 0 || add50 < 0 || add100 < 0) {
             System.out.println("Количество внесенных купюр не может быть отрицательным");
@@ -29,4 +33,5 @@ public class ATM {
         int totalAdded = add20 * 20 + add50 * 50 + add100 * 100;
         System.out.println("Общая добавленная сумма: " + totalAdded + " рублей");
     }
+
 }

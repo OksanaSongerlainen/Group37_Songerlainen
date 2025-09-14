@@ -11,8 +11,9 @@ public class Main {
     количеством купюр каждого номинала.*/
     public static void main(String[] args) {
 ATM atm = new ATM(100,70,40);
+        System.out.println( "Доступная сумма в банкомате: " + InitialInfoATM);
         System.out.println("\nДобавляем купюры:");
-        atm.addMoney(1,4,8);
+        atm.addMoney(0,4,8);
 
     }
 }
