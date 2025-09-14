@@ -36,4 +36,8 @@ public class CreditCard {
             System.out.println("Снято " + amount + " рублей. Новый баланс " + currentBalance + " рублей.");
         }
     }
+    public void cardInfo() {
+        System.out.println("Номер счета " + accountNumber);
+        System.out.println("Текущий баланс: " + currentBalance);
+    }
 }

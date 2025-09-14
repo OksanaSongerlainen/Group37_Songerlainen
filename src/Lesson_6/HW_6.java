@@ -22,5 +22,7 @@ public class HW_6 {
         card.withdrawal(300);
         card.withdrawal(10000);
         card.withdrawal(-100);
+
+        card.cardInfo();
     }
 }
