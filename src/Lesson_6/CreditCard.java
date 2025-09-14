@@ -9,11 +9,12 @@ package Lesson_6;
        третьей. Выведите на экран текущее состояние всех трех карточек.*/
 
 public class CreditCard {
-String accountNumber;
-double currentBalance;
+    String accountNumber;
+    double currentBalance;
+
     public CreditCard(String accountNumber, double currentBalance) {
-            this.currentBalance = currentBalance;
-            this.accountNumber = accountNumber;
+        this.currentBalance = currentBalance;
+        this.accountNumber = accountNumber;
     }
 
     public void deposit(double amount) {
@@ -24,12 +25,13 @@ double currentBalance;
             System.out.println("Начислено " + amount + " рублей. Новый баланс " + currentBalance + " рублей.");
         }
     }
-    public void  withdrawal(double amount) {
+
+    public void withdrawal(double amount) {
         if (amount <= 0) {
             System.out.println("Сумма для снятия должна быть положительной");
-        } if (amount > currentBalance) {
+        } else if (amount > currentBalance) {
             System.out.println("На счету недостаточно средств для снятия");
-        }else {
+        } else {
             this.currentBalance = this.currentBalance - amount;
             System.out.println("Снято " + amount + " рублей. Новый баланс " + currentBalance + " рублей.");
         }
