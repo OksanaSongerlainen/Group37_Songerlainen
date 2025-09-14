@@ -18,5 +18,8 @@ public class HW_6 {
 
         card.deposit(500.0);
         card.deposit(-50.0);
+
+        card.withdrawal(300);
+        card.withdrawal(10000);
     }
 }

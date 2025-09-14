@@ -24,4 +24,14 @@ double currentBalance;
             System.out.println("Начислено " + amount + " рублей. Новый баланс " + currentBalance + " рублей.");
         }
     }
+    public void  withdrawal(double amount) {
+        if (amount <= 0) {
+            System.out.println("Сумма для снятия должна быть положительной");
+        } if (amount > currentBalance) {
+            System.out.println("На счету недостаточно средств для снятия");
+        }else {
+            this.currentBalance = this.currentBalance - amount;
+            System.out.println("Снято " + amount + " рублей. Новый баланс " + currentBalance + " рублей.");
+        }
+    }
 }
