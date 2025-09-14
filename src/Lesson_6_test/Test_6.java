@@ -1,4 +1,4 @@
-package Lesson_6;
+package Lesson_6_test;
 
 public class Test_6 {public static void main(String[] args) {
     Glasha glasha = new Glasha();

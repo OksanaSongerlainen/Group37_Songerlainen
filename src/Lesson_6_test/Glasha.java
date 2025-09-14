@@ -1,4 +1,4 @@
-package Lesson_6;
+package Lesson_6_test;
 
 public class Glasha {
     int age = 3;
