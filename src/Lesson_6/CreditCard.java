@@ -9,18 +9,19 @@ package Lesson_6;
        третьей. Выведите на экран текущее состояние всех трех карточек.*/
 
 public class CreditCard {
-    String accountNumber;
-    Double currentBalance;
-
-    public CreditCard(String accountNumber, Double amount) {
-        this String accountNumber = accountNumber;
-        this Double currentBalance = currentBalance;
+String accountNumber;
+double currentBalance;
+    public CreditCard(String accountNumber, double currentBalance) {
+            this.currentBalance = currentBalance;
+            this.accountNumber = accountNumber;
     }
+
+    public void deposit(double amount) {
         if (amount <= 0) {
             System.out.println("Сумма для начисления должна быть положительной");
-        }
+        } else {
             this.currentBalance = this.currentBalance + amount;
-            System.out.println("Начислено " + amount + " рублей. Новый баласнс " + currentBalance + " рублей.");
+            System.out.println("Начислено " + amount + " рублей. Новый баланс " + currentBalance + " рублей.");
         }
     }
-
+}
