@@ -11,27 +11,31 @@ public class ATM {
         this.banknote100 = banknote100;
     }
 
-    public void InitialInfo(int banknote20, int banknote50, int banknote100) {
-        System.out.println("Доступная сумма: " + banknote20*20 + banknote50*50 + banknote100*100);
+    public void addMoney(int banknote20, int banknote50, int banknote100) {
+        if (banknote20 < 0 || banknote50 < 0 || banknote100 < 0) {
+            System.out.println("Количество внесенных купюр должно быть положительным!");
+            return;
+        } else if (banknote20 == 0 && banknote50 == 0 && banknote100 == 0) {
+            System.out.println("Вы не внесли ничего!");
+            return;
+        } else {
+            this.banknote20 = this.banknote20 + banknote20;
+            this.banknote50 = this.banknote50 + banknote50;
+            this.banknote100 = this.banknote100 + banknote100;
+            System.out.println("Деньги успешно внесены!");
+        }
     }
 
-    public void addMoney(int add20, int add50, int add100) {
-        if (add20 < 0 || add50 < 0 || add100 < 0) {
-            System.out.println("Количество внесенных купюр не может быть отрицательным");
-            return;
+    /*public boolean withdraw (int amount) {
+        if (amount <= 0) {
+            System.out.println("Сумма должна быть положительной!");
+            return false;
+        }
+        int total = banknote20 * 20 + banknote50 * 50 + banknote100 * 100;
+        if (amount > total) {
+            System.out.println("Недостаточно средств в банкомате.");
+            return false;*/
         }
 
-        banknote20 = banknote20 + add20;
-        banknote50 = banknote50 + add50;
-        banknote100 = banknote100 + add100;
 
-        System.out.println("Добавлено в банкомат:");
-        System.out.println("Купюр номиналом 20: " + add20);
-        System.out.println("Купюр номиналом 50: " + add50);
-        System.out.println("Купюр номиналом 100: " + add100);
 
-        int totalAdded = add20 * 20 + add50 * 50 + add100 * 100;
-        System.out.println("Общая добавленная сумма: " + totalAdded + " рублей");
-    }
-
-}
