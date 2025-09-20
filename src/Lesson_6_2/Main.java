@@ -10,15 +10,15 @@ public class Main {
     какого номинала выдаётся сумма. Создать конструктор с тремя параметрами -
     количеством купюр каждого номинала.*/
     public static void main(String[] args) {
-ATM atm = new ATM(10,7,4);
+ATM atm = new ATM(10,5,3);
         System.out.println("Начальное состояние:");
         atm.showStatus();
         System.out.println("\nДобавляем купюры:");
-        atm.addMoney(0,4,8);
+        atm.addMoney(7,4,2);
         System.out.println("\nСостояние после пополнения:");
         atm.showStatus();
-        System.out.println("\nCнять 470 рублей:");
-        boolean result1 = atm.withdraw(470);
+        System.out.println("\nCнять 320 рублей:");
+        boolean result1 = atm.withdraw(320);
         System.out.println("Результат выполнения операции: " + result1);
         System.out.println("\nСостояние после снятия:");
         atm.showStatus();
