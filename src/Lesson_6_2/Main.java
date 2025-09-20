@@ -13,8 +13,8 @@ public class Main {
 ATM atm = new ATM(10,7,4);
         System.out.println("\nДобавляем купюры:");
         atm.addMoney(0,4,8);
-        System.out.println("\nCнять 370 рублей:");
-        boolean результат1 = atm.withdraw(370);
-        System.out.println("Операция выполнена успешно: " + результат1);
+        System.out.println("\nCнять 40 рублей:");
+        boolean результат1 = atm.withdraw(40);
+        System.out.println("Результат выполнения операции: " + результат1);
     }
 }

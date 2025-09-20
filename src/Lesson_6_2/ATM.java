@@ -42,15 +42,23 @@ public class ATM {
                 int balance50 = balance100 - qtyBanknote50 * 50;
                 if (balance50 >= 0 && balance50 % 20 == 0) {
 
-                    int balance20 = balance50 / 20;
-                    if (balance20 <= banknote20) {
+                    int qtyBanknote20 = balance50 / 20;
+                    if (qtyBanknote20 <= banknote20) {
                         banknote100 = banknote100 - qtyBanknote100;
                         banknote50 = banknote50 - qtyBanknote50;
                         banknote20 = banknote20 - qtyBanknote20;
                         return true;
+                                                }
                     }
                 }
             }
+        System.out.println("Невозможно выдать сумму " + amount + " доступными купюрами");
+        return false;
         }
+    void printWithdrawalResult(int qtyBanknote20, int qtyBanknote50, int qtyBanknote100) {
+        System.out.println("Выдано: ");
+        if (qtyBanknote100 > 0) System.out.println("100: " + qtyBanknote100 + " купюр");
+        if (qtyBanknote50 > 0) System.out.println("50: " + qtyBanknote50 + " купюр");
+        if (qtyBanknote20 > 0) System.out.println("20: " + qtyBanknote20 + " купюр");
     }
 }
