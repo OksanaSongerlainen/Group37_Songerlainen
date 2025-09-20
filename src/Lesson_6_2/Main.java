@@ -18,7 +18,7 @@ ATM atm = new ATM(10,7,4);
         System.out.println("\nСостояние после пополнения:");
         atm.showStatus();
         System.out.println("\nCнять 40 рублей:");
-        boolean result1 = atm.withdraw(40);
+        boolean result1 = atm.withdraw(470);
         System.out.println("Результат выполнения операции: " + result1);
         System.out.println("\nСостояние после снятия:");
         atm.showStatus();
