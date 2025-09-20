@@ -14,7 +14,7 @@ ATM atm = new ATM(10,7,4);
         System.out.println("\nДобавляем купюры:");
         atm.addMoney(0,4,8);
         System.out.println("\nCнять 40 рублей:");
-        boolean результат1 = atm.withdraw(40);
-        System.out.println("Результат выполнения операции: " + результат1);
+        boolean result1 = atm.withdraw(40);
+        System.out.println("Результат выполнения операции: " + result1);
     }
 }
