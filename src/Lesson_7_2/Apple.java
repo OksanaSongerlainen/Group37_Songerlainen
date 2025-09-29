@@ -5,7 +5,13 @@ public class Apple {
     инициализировать его. В методе main другого класса создать объект Apple, и не
     используя сеттеры изменить значение поля color*/
     private String color = "Зеленый";
-    public String getColor(){
-        return color;
+
+    public Apple(String color) {
+        this.color = color;
+    }
+    public Apple() {
+    }
+    public void printColor() {
+        System.out.println("Цвет яблока " + color);
     }
 }
