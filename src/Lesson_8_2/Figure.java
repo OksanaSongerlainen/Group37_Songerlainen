@@ -8,4 +8,8 @@ public abstract class Figure {
     }
     public abstract double calcArea();
     public abstract double calcPerimeter();
+
+    public String getName() {
+        return name;
+    }
 }

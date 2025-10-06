@@ -1,6 +1,6 @@
 package Lesson_8_2;
 
-public class Rectangle extends Figure{
+public class Rectangle extends Figure {
     private double length;
     private double width;
 
@@ -12,12 +12,12 @@ public class Rectangle extends Figure{
 
     @Override
     public double calcArea() {
-        return length*width;
+        return length * width;
     }
 
     @Override
     public double calcPerimeter() {
-        return 2*(length + width);
+        return 2 * (length + width);
     }
 
     public double getLength() {

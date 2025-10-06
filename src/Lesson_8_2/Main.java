@@ -6,9 +6,9 @@ public class Main {
 Вывести на экран сумму периметра всех фигур в массиве*/
 public static void main(String[] args) {
     Figure[] figures = new Figure[3];
-    figures[0] = new triangle ("Треугольник", 2, 3,5);
-    figures[0] = new rectangle  ("Прямоугольник", 4, 2);
-    figures[0] = new circle ("Круг", 7);
-    System.out.println(" Фигура: " + + "Площадь: " + + "Периметр: " +);
+    figures[0] = new Triangle("Треугольник", 2, 3,5);
+    figures[0] = new Rectangle  ("Прямоугольник", 4, 2);
+    figures[0] = new Circle ("Круг", 7);
+    System.out.println(" Фигура: " +  "Площадь: " + "Периметр: " );
 }
 }
