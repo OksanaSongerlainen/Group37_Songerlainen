@@ -11,12 +11,25 @@ public class Main {
         figures[2] = new Circle("Круг большой", 9);
         figures[3] = new Circle("Круг малый", 3);
         figures[4] = new Triangle("Треугольник большой", 7, 12, 18);
+
+        double totalPerimeters = 0;
         for (Figure figure : figures) {
-            String figureName = figure.name;
+            String figureName = figure.getName();
             double figureArea = figure.calcArea();
             double figurePerimeter = figure.calcPerimeter();
-            System.out.println("Фигура: " + figureName + "\nПлощадь: " + figureArea + "\nПериметр: " + figurePerimeter
-                    + "\n");
+
+
+            String formattedArea = String.format("%.2f", figureArea);
+            String formattedPerimeter = String.format("%.2f", figurePerimeter);
+            System.out.println("Фигура: " + figureName + "\nПлощадь: " + formattedArea + "\nПериметр: "
+                    + formattedPerimeter + "\n");
+
+
+            totalPerimeters = totalPerimeters + figurePerimeter;
+        }
+
+            String formattedTotalPerimeters = String.format("%.2f", totalPerimeters);
+            System.out.println("Сумма периметров всех фигур в массиве: " + formattedTotalPerimeters);
         }
     }
-}
+
