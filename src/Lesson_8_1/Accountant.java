@@ -1,4 +1,4 @@
-package Lesson_8;
+package Lesson_8_1;
 
 public class Accountant implements Position{
 

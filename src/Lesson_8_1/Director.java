@@ -1,4 +1,4 @@
-package Lesson_8;
+package Lesson_8_1;
 
 public class Director implements Position {
     /*Создать классы "Директор", "Рабочий", "Бухгалтер". Реализовать интерфейс с методом,

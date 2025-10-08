@@ -1,4 +1,4 @@
-package Lesson_7;
+package Lesson_7_1;
 
 public class Patient {
     private int treatmentPlan;
