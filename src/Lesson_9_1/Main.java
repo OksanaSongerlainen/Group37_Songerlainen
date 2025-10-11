@@ -8,7 +8,7 @@ public class Main {
         Animal dog = new Dog("Собака");
         Animal tiger = new Tiger("Тигр");
         Animal rabbit = new Rabbit("Кролик");
-String[] foods = {"Meat", "Fish", "Grass", "Bread", "Fruit"};
+String[] foods = {"Meat", "Grass"};
 
 
         System.out.println("Собака: ");
