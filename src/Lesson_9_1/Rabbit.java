@@ -7,17 +7,17 @@ public class Rabbit extends Animal{
 
     @Override
     public void voice() {
-        System.out.println(getName() + " Пи-пи-пи");
+        System.out.println(getName() + " издает звук: пи-пи-пи");
     }
 
     @Override
     public void eat(String food) {
         if ("Meat". equals(food)) {
-            System.out.println("Кролик не ест " + food);
+            System.out.println(getName() + " не ест " + food);
         } else if ("Grass".equals(food)){
-            System.out.println("Собака ест " + food);
+            System.out.println(getName() + " ест " + food);
         }else {
-            System.out.println("Кролик сам решит " + food);
+            System.out.println(getName() + " возможно ест " + food);
         }
     }
 }

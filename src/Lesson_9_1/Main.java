@@ -8,17 +8,25 @@ public class Main {
         Animal dog = new Dog("Собака");
         Animal tiger = new Tiger("Тигр");
         Animal rabbit = new Rabbit("Кролик");
+String[] foods = {"Meat", "Fish", "Grass", "Bread", "Fruit"};
+
 
         System.out.println("Собака: ");
         dog.voice();
-        dog.eat();
+        for (String food : foods) {
+            dog.eat(food);
+        }
 
-        System.out.println("Тигр: ");
+        System.out.println("\n Тигр: ");
         tiger.voice();
-        tiger.eat();
+        for (String food : foods) {
+            tiger.eat(food);
+        }
 
-        System.out.println("Кролик: ");
+        System.out.println("\n Кролик: ");
         rabbit.voice();
-        rabbit.eat();
+        for (String food : foods) {
+            rabbit.eat(food);
+        }
     }
 }

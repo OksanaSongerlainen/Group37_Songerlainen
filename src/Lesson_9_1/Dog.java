@@ -7,17 +7,17 @@ package Lesson_9_1;
 
     @Override
     public void voice() {
-        System.out.println(getName() + " Гав-гав");
+        System.out.println(getName() + " издает звук: гав-гав");
     }
 
     @Override
     public void eat(String food) {
         if ("Meat". equals(food)) {
-            System.out.println("Собака ест " + food);
+            System.out.println(getName() + " ест " + food);
         } else if ("Grass".equals(food)){
-            System.out.println("Собака не есть " + food);
+            System.out.println(getName() + " не ест " + food);
         }else {
-            System.out.println("Собака сама решит " + food);
+            System.out.println(getName() + " возможно ест " + food);
         }
     }
 }
