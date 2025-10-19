@@ -37,7 +37,7 @@ public class User {
         this.age = age;
     }
     public String toString() {
-        return "User{" + "Имя пользователя: " + username + '\''
+        return " User{" + "Имя пользователя: " + username + '\''
                 + " email: " + email + '\''
                 + ", возраст: " + age
                 + '}';
