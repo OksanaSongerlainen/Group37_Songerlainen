@@ -7,6 +7,10 @@ public class Main {
         значением полей и сравнить с помощью метода equals*/
     User user = new User("Иван Иванов", "123456@mail.ru", 30);
         System.out.println(user);
+        User user2 = new User("Иван Иванов", "123456@mail.ru", 30);
+        System.out.println(user2);
+        System.out.println(user == user2);
+        System.out.println(user.equals(user2));
     }
 
 }
