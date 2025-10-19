@@ -1,0 +1,9 @@
+package Lesson_10_1;
+
+public class Main {
+    public static void main(String[] args) {
+       /* Создать класс для описания пользователя системы. Переопределить в классе методы
+        toString,hashcode и equals. Создать несколько экземпляров класса с одним и тем же
+        значением полей и сравнить с помощью метода equals*/
+    }
+}
