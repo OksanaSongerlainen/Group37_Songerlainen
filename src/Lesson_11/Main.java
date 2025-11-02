@@ -14,13 +14,31 @@ public class Main {
         System.out.println("Введите третью строку: ");
         String str3 = scanner.nextLine();
 
-        System.out.println( "Строка 1: \"" + str1 + "\"");
+        System.out.println("Строка 1: \"" + str1 + "\"");
         System.out.println("Длина: " + str1.length());
 
-        System.out.println( "Строка 2: \"" + str2 + "\"");
+
+        System.out.println("Строка 2: \"" + str2 + "\"");
         System.out.println("Длина: " + str2.length());
 
-        System.out.println( "Строка 3: \"" + str3 + "\"");
+        System.out.println("Строка 3: \"" + str3 + "\"");
         System.out.println("Длина: " + str3.length());
+        String shortest = str1;
+        if (str2.length() < shortest.length()) {
+            shortest = str2;
+        }
+        if (str3.length() < shortest.length()) {
+            shortest = str3;
+        }
+
+        String longest = str1;
+        if (str2.length() > longest.length()) {
+            longest = str2;
+        }
+        if (str3.length() > longest.length()) {
+            longest = str3;
+        }
+            System.out.println("Самая короткая строка: \"" + shortest + "\"");
+            System.out.println("Самая длинная строка: \"" + longest + "\"");
+        }
     }
-}
