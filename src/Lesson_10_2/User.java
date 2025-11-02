@@ -43,10 +43,10 @@ public class User implements Cloneable {
     }
 
     public User deepClone() throws CloneNotSupportedException {
-        User cloned = (User) super.clone();
-        cloned.email = new String[this.email.length];
-        cloned.email = this.email.clone();
-        return cloned;
+        User clonedUser = (User) super.clone();
+        clonedUser.email = new String[this.email.length];
+        clonedUser.email = this.email.clone();
+        return clonedUser;
     }
 
     @Override
