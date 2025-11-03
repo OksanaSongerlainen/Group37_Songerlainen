@@ -53,10 +53,10 @@ public class Main {
                 }
             }
         }
-                System.out.println("\nСтроки в порядке возрастания длины:");
-                for (int i = 0; i < strings.length; i++) {
-                    System.out.println((i + 1) + ". \"" + strings[i] + "\" (длина: " + strings[i].length() + ")");
-                }
+        System.out.println("\nСтроки в порядке возрастания длины:");
+        for (int i = 0; i < strings.length; i++) {
+            System.out.println((i + 1) + ". \"" + strings[i] + "\" (длина: " + strings[i].length() + ")");
+        }
 
        /* Ввести 3 строки с консоли. Вывести на консоль те строки, длина которых меньше
         средней, а также их длину*/
@@ -80,5 +80,41 @@ public class Main {
         if (!found) {
             System.out.println("Нет строк с длиной меньше средней");
         }
-            }
+
+      /*  Ввести 3 строки с консоли. Найти слово, состоящее только из различных символов.
+        Если таких слов несколько, найти первое из них*/
+
+        System.out.println("\nПоиск строки с уникальными символами:");
+        String uniqueCharString = findFirstUniqueCharString(str1, str2, str3);
+
+        if (uniqueCharString != null) {
+            System.out.println("Первая строка с уникальными символами: \"" + uniqueCharString + "\"");
+            System.out.println("Длина: " + uniqueCharString.length());
+        } else {
+            System.out.println("Нет строк, состоящих только из уникальных символов");
+
         }
+    }
+
+    private static boolean hasAllUniqueChars(String str) {
+        if (str == null || str.isEmpty()) {
+            return true;
+        }
+        return false;
+    }
+
+    private static String findFirstUniqueCharString(String str1, String str2, String str3) {
+        if (hasAllUniqueChars(str1)) {
+            return str1;
+        }
+        if (hasAllUniqueChars(str2)) {
+            return str2;
+        }
+        if (hasAllUniqueChars(str3)) {
+            return str3;
+        }
+        return null;
+    }
+}
+
+
