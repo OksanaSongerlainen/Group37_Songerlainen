@@ -38,7 +38,26 @@ public class Main {
         if (str3.length() > longest.length()) {
             longest = str3;
         }
-            System.out.println("Самая короткая строка: \"" + shortest + "\"");
-            System.out.println("Самая длинная строка: \"" + longest + "\"");
+        System.out.println("Самая короткая строка: \"" + shortest + "\"");
+        System.out.println("Самая длинная строка: \"" + longest + "\"");
+
+
+        /*Ввести 3 строки с консоли. Упорядочить и вывести строки в порядке возрастания значений их длины*/
+        String[] strings = {str1, str2, str3};
+        for (int i = 0; i < strings.length - 1; i++) {
+            for (int j = 0; j < strings.length - 1 - i; j++) {
+                if (strings[j].length() > strings[j + 1].length()) {
+                    String temp = strings[j];
+                    strings[j] = strings[j + 1];
+                    strings[j + 1] = temp;
+                }
+            }
         }
-    }
+                System.out.println("\nСтроки в порядке возрастания длины:");
+                for (int i = 0; i < strings.length; i++) {
+                    System.out.println((i + 1) + ". \"" + strings[i] + "\" (длина: " + strings[i].length() + ")");
+                }
+
+
+            }
+        }
