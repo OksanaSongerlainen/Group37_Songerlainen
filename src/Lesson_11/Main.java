@@ -58,6 +58,27 @@ public class Main {
                     System.out.println((i + 1) + ". \"" + strings[i] + "\" (длина: " + strings[i].length() + ")");
                 }
 
+       /* Ввести 3 строки с консоли. Вывести на консоль те строки, длина которых меньше
+        средней, а также их длину*/
+        int totalLength = 0;
+        for (String str : strings) {
+            totalLength += str.length();
+        }
+        double averageLength = totalLength / 3.0;
 
+        System.out.printf("\nСредняя длина строк: %.2f\n", averageLength);
+
+        System.out.println("Строки с длиной меньше средней:");
+        boolean found = false;
+        for (String str : strings) {
+            if (str.length() < averageLength) {
+                System.out.println("- \"" + str + "\" (длина: " + str.length() + ")");
+                found = true;
+            }
+        }
+
+        if (!found) {
+            System.out.println("Нет строк с длиной меньше средней");
+        }
             }
         }
