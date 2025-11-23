@@ -30,8 +30,8 @@ public class Main {
         try {
             Person person = new Person(login, password, confirmPassword);
             System.out.println("Данные введены корректно!");
-            System.out.println("Логин: " +person.login );
-        } catch ( WrongLoginException | WrongPasswordException e) {
+            System.out.println("Логин: " + person.login);
+        } catch (WrongLoginException | WrongPasswordException e) {
             System.out.println("Данные введены некорректно: " + e.getMessage());
         }
     }
