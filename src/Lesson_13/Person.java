@@ -13,6 +13,7 @@ public class Person {
         if (login.contains(" ")) {
             throw new WrongLoginException("Логин не должен содержать пробелы!");
         }
+
         if (password.length() >= 20) {
             throw new WrongLoginException("Пароль должен быть меньше 20 символов!");
         }
@@ -25,6 +26,7 @@ public class Person {
         if (!password.equals(confirmPassword)) {
             throw new WrongPasswordException("Пароли не совпадают!");
         }
+
         this.login = login;
         this.password = password;
         this.confirmPassword = confirmPassword;
